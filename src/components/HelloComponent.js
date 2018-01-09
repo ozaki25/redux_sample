@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, TouchableOpacity } from 'react-native';
 import PropTypes from 'prop-types';
 
-const HelloComponent = ({ message = 'test', onPress }) => (
+const HelloComponent = ({ message, onPress }) => (
   <TouchableOpacity
     onPress={onPress}
     style={{ flex: 1, alignSelf: 'center', justifyContent: 'center' }}
