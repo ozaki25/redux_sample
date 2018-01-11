@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import sample from './sample';
+import message from './message';
 
 const reducer = combineReducers({
-  sample,
+  message,
 });
 
 export default reducer;

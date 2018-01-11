@@ -1,13 +1,13 @@
 import { connect } from 'react-redux';
-import { sampleAction } from '../actions';
+import { changeMessage } from '../actions';
 import HelloComponent from '../components/HelloComponent';
 
-const mapStateToProps = ({ sample }) => ({
-  message: sample.message,
+const mapStateToProps = ({ message }) => ({
+  message: message.text,
 });
 
 const mapDispatchToProps = dispatch => ({
-  onPress: () => dispatch(sampleAction()),
+  onChange: text => dispatch(changeMessage(text)),
 });
 
 const HelloContainer = connect(mapStateToProps, mapDispatchToProps)(HelloComponent);

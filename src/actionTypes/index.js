@@ -1,1 +1,1 @@
-export const SAMPLE_ACTION = 'SAMPLE_ACTION';
+export const CHANGE_MESSAGE = 'CHANGE_MESSAGE';
